@@ -18,6 +18,20 @@ git clone https://github.com/Azure/live-video-analytics
 ```
 Open the cloned **live-video-analytics** repository and cd into the *ref-apps/lva-edge-iot-central-gateway* folder with VS Code.
 
+## Modify Inference Endpoint for Custom Inference Service
+In order to bring up your custom inference service, you need to modify the inference URL in *objectGraphTopology.json*. Please follow below instructions to update the inference URL.
+1. In VS Code, open *setup/objectGraphTopology.json* file.
+2. Edit the `inferencingUrl` section to update the default value of `inference URL`(Line no.34). Below are the list of available inference endpoints for LVA.
+
+**OpenVINO™ Model Server**
+- Vehicle Detection (Default): http://OpenVINOModelServerEdgeAIExtensionModule:4000/vehicleDetection 
+- Person Vehicle Bike Detection: http://OpenVINOModelServerEdgeAIExtensionModule:4000/personVehicleBikeDetection 
+- Face Detection: http://OpenVINOModelServerEdgeAIExtensionModule:4000/vehicleDetection   
+
+**YOLOv3**
+- Object Detection: http://lvaYolov3/score
+
+
 ## Edit the deployment.amd64.json file
 1. If you haven't already done so, create a folder called *storage* in the project folder. This folder is ignored by Git so as to prevent you accidentally checking in any confidential information.
 1. Copy the file setup/deployment.amd64.json* and save it in the *storage* folder.
