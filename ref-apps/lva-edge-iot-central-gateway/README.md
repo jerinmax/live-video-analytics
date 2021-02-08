@@ -26,7 +26,7 @@ In order to bring up your own custom inference service, you need to include the 
 **OpenVINO™ Model Server**
 - Vehicle Detection: http://OpenVINOModelServerEdgeAIExtensionModule:4000/vehicleDetection 
 - Person Vehicle Bike Detection: http://OpenVINOModelServerEdgeAIExtensionModule:4000/personVehicleBikeDetection 
-- Face Detection: http://OpenVINOModelServerEdgeAIExtensionModule:4000/vehicleDetection   
+- Face Detection: http://OpenVINOModelServerEdgeAIExtensionModule:4000/faceDetection   
 
 **YOLOv3**
 - Object Detection: http://lvaYolov3/score
